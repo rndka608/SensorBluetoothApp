@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected Button btFind, btConnect, btRead, btWrite;
     protected EditText edWrite;
     protected TextView txRead;
+    protected StringTok stSensorInput = new StringTok("");
 
     protected void showMsg(String  str) {
         Toast.makeText(this,str, Toast.LENGTH_SHORT).show();
@@ -104,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String str = bthService.getSerialInput();
-                txRead.setText(str);
+                stSensorInput.appendString(str);
+                txRead.setText(stSensorInput.toString());
             }
         });
 
