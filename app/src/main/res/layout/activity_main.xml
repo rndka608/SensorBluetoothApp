@@ -20,7 +20,7 @@
         android:id="@+id/btConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="112dp"
         android:layout_marginTop="28dp"
         android:text="CONNECT"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:id="@+id/btWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="112dp"
         android:layout_marginTop="112dp"
         android:text="WRITE"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,9 +72,29 @@
         android:id="@+id/btViewSensor0"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginStart="264dp"
+        android:layout_marginStart="212dp"
         android:layout_marginTop="28dp"
         android:text="VIEWSENSOR0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txState"
+        android:layout_width="94dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="172dp"
+        android:text="Bluetooth 상태"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="112dp"
+        android:text="온/습도"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
